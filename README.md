@@ -2,6 +2,8 @@
 
 Статический investor-facing сайт состава Heroes of the Storm. Сборка не требуется: HTML, CSS и JavaScript готовы для GitHub Pages.
 
+**Live:** https://sychistyakov.github.io/Pirtus.vrot/
+
 ## Локальный просмотр
 
 Из папки `investor-site`:
@@ -12,12 +14,9 @@ python -m http.server 4173
 
 Откройте `http://localhost:4173`.
 
-## Публикация на GitHub Pages
+## Публикация
 
-1. Создайте GitHub-репозиторий и поместите содержимое этой папки в его корень.
-2. В GitHub откройте **Settings → Pages**.
-3. В **Build and deployment** выберите **Deploy from a branch**.
-4. Выберите ветку `main`, папку `/ (root)` и нажмите **Save**.
+Каждый push в `main` автоматически публикуется через workflow `.github/workflows/pages.yml`.
 
 Сайт не зависит от CDN или серверной части. PDF-отчёт лежит в `assets/pirtus-vrot-scouting-report.pdf`.
 
