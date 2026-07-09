@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070b13" />
+    <meta
+      name="description"
+      content="PIRTUS.VROT — инвестиционный профиль готового состава Heroes of the Storm с проверяемой матчевой аналитикой."
+    />
+    <meta property="og:title" content="PIRTUS.VROT — HOTS Team Intelligence" />
+    <meta
+      property="og:description"
+      content="Готовое игровое ядро. Измеримый потенциал. Структурированный путь от просмотра к контракту."
+    />
+    <title>PIRTUS.VROT — HOTS Team Intelligence</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К основному содержанию</a>
+    <div class="intro-sequence" aria-hidden="true">
+      <div class="intro-horizon"></div>
+      <div class="intro-sigil"><i></i><i></i><i></i><i></i></div>
+      <p>INITIALIZING TEAM INTELLIGENCE</p>
+      <strong>PIRTUS<span>.VROT</span></strong>
+      <div class="intro-charge"><i></i></div>
+      <small>FIVE SIGNALS · ONE ASCENT</small>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><i></i></div>
+    <div class="cursor-aura" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="PIRTUS.VROT, наверх">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>PIRTUS<b>.VROT</b></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span>
+          <span class="sr-only">Открыть меню</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+          <a href="#thesis">Тезис</a>
+          <a href="#analytics">Аналитика</a>
+          <a href="#individuals">Игроки</a>
+          <a href="#roadmap">90 дней</a>
+          <a class="nav-cta" href="assets/pirtus-vrot-scouting-report.pdf" target="_blank" rel="noreferrer">
+            Data room
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <canvas id="signal-canvas" aria-hidden="true"></canvas>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-flare" aria-hidden="true"></div>
+        <div class="hero-energy" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="shell hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> HOTS TEAM INTELLIGENCE / CASE 01</p>
+            <h1>Готовое ядро.<br /><em>Измеримый потенциал.</em></h1>
+            <p class="hero-lead">
+              Пять самостоятельных талантов с подтверждённой механикой и разными путями к мировому уровню —
+              собраны в один инвестиционный кейс.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#analytics">
+                Смотреть сигналы <span aria-hidden="true">↘</span>
+              </a>
+              <a class="button button-ghost" href="assets/pirtus-vrot-scouting-report.pdf" target="_blank" rel="noreferrer">
+                Открыть отчёт <span class="file-meta">PDF · 14 стр.</span>
+              </a>
+            </div>
+            <p class="hero-note">
+              Аналитическая выборка: Warhead Junction · 25:45 · Quick Match
+            </p>
+          </div>
+
+          <div class="hero-visual reveal" data-delay="120">
+            <div class="orbit-system" aria-hidden="true">
+              <div class="orbit orbit-one"><span></span><span></span></div>
+              <div class="orbit orbit-two"><span></span><span></span><span></span></div>
+              <div class="core-node">
+                <small>TEAM CORE</small>
+                <strong>5/5</strong>
+                <span>roles online</span>
+              </div>
+              <div class="orbit-label label-a">MACRO <b>88</b></div>
+              <div class="orbit-label label-b">DAMAGE <b>287K</b></div>
+              <div class="orbit-label label-c">HEALING <b>+21%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shell hero-kpis" aria-label="Ключевые показатели">
+          <article class="kpi reveal" data-delay="40">
+            <span class="kpi-index">01</span>
+            <strong><span data-counter="10476">10 476</span></strong>
+            <p>верифицированных событий</p>
+          </article>
+          <article class="kpi reveal" data-delay="80">
+            <span class="kpi-index">02</span>
+            <strong><span data-counter="2">2</span> × Tier A</strong>
+            <p>приоритетных кандидата</p>
+          </article>
+          <article class="kpi reveal" data-delay="120">
+            <span class="kpi-index">03</span>
+            <strong><span data-counter="560">560</span>K</strong>
+            <p>осадного давления</p>
+          </article>
+          <article class="kpi reveal" data-delay="160">
+            <span class="kpi-index">04</span>
+            <strong><span data-counter="90">90</span> дней</strong>
+            <p>до решения по составу</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="thesis" class="section thesis-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> ИНВЕСТИЦИОННЫЙ ТЕЗИС</p>
+              <h2>Мы покупаем не хайп.<br />Мы сокращаем путь к сыгранности.</h2>
+            </div>
+            <p class="section-intro">
+              PIRTUS.VROT уже существует как игровая единица. Ценность — в полном составе,
+              читаемом распределении ролей и данных, из которых можно построить управляемый trial.
+            </p>
+          </div>
+
+          <div class="thesis-grid">
+            <article class="thesis-card thesis-card-feature reveal">
+              <span class="card-code">EDGE / 01</span>
+              <div class="edge-number">5<span>/5</span></div>
+              <h3>Роли закрыты сейчас</h3>
+              <p>
+                Макро, фронтлайн, финишер, саппорт и PvE/bruiser-контур уже собраны.
+                Это экономит месяцы первичного комплектования.
+              </p>
+              <div class="role-strip" aria-label="Роли команды">
+                <span style="--level: 86%">MACRO</span>
+                <span style="--level: 92%">TANK</span>
+                <span style="--level: 78%">FINISH</span>
+                <span style="--level: 94%">SUPPORT</span>
+                <span style="--level: 72%">BRUISER</span>
+              </div>
+            </article>
+
+            <article class="thesis-card reveal" data-delay="70">
+              <span class="card-code">SIGNAL / 02</span>
+              <div class="line-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Есть верхний потолок</h3>
+              <p>
+                Linatan и DavidKimChi уже дают сигналы Tier A: 77–81% участия в убийствах,
+                высокий объём поддержки и контроля.
+              </p>
+              <div class="card-foot"><b>2</b> приоритетных tryout-слота</div>
+            </article>
+
+            <article class="thesis-card reveal" data-delay="140">
+              <span class="card-code">UPSIDE / 03</span>
+              <div class="line-icon line-icon-risk" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Риск диагностируем</h3>
+              <p>
+                Команда создаёт давление, но теряет конверсию: 8 кластеров смертей и нулевой
+                урон ядерными боеголовками. Это тренируемая, а не скрытая проблема.
+              </p>
+              <div class="card-foot"><b>8</b> эпизодов для VOD review</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="analytics" class="section analytics-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> MATCH SIGNALS</p>
+              <h2>Давление есть.<br />Конверсию нужно построить.</h2>
+            </div>
+            <p class="section-intro">
+              Команда сравнялась с победителем по hero damage и превзошла его по siege и healing,
+              но уступила по структурам, объектам и времени вне карты.
+            </p>
+          </div>
+
+          <div class="analytics-layout">
+            <article class="panel comparison-panel reveal">
+              <div class="panel-head">
+                <div>
+                  <p class="panel-kicker">TEAM vs OPPONENT</p>
+                  <h3>Конверсия ресурсов</h3>
+                </div>
+                <div class="chart-legend" aria-label="Легенда">
+                  <span><i class="legend-core"></i> PIRTUS.VROT</span>
+                  <span><i class="legend-opp"></i> OPPONENT</span>
+                </div>
+              </div>
+              <div id="conversion-chart" class="comparison-chart" aria-label="Сравнение команд"></div>
+              <p class="chart-note">Сырые значения из replay tracker. Для смертей меньше — лучше.</p>
+            </article>
+
+            <article class="panel radar-panel reveal" data-delay="100">
+              <div class="panel-head">
+                <div>
+                  <p class="panel-kicker">SCOUTING MODEL</p>
+                  <h3>Профиль сигнала</h3>
+                </div>
+                <span class="live-badge"><i></i> MODEL 01</span>
+              </div>
+              <div id="signal-radar" class="radar-chart" aria-label="Радар аналитических индексов"></div>
+              <p class="chart-note">Индексы 0–100 — интерпретация одного матча, а не рейтинг лиги.</p>
+            </article>
+          </div>
+
+          <div class="signal-cards">
+            <article class="signal-card positive reveal">
+              <span>01 / PRESSURE</span>
+              <strong>+22%</strong>
+              <h3>Siege advantage</h3>
+              <p>560K против 460K — макро-контур создаёт пространство.</p>
+            </article>
+            <article class="signal-card positive reveal" data-delay="60">
+              <span>02 / SUPPORT</span>
+              <strong>+21%</strong>
+              <h3>Healing advantage</h3>
+              <p>Linatan удерживает команду в затяжных разменах.</p>
+            </article>
+            <article class="signal-card negative reveal" data-delay="120">
+              <span>03 / CONVERSION</span>
+              <strong>3.1×</strong>
+              <h3>Structure gap</h3>
+              <p>Давление не превращается в здания и контроль карты.</p>
+            </article>
+            <article class="signal-card negative reveal" data-delay="180">
+              <span>04 / AVAILABILITY</span>
+              <strong>+48%</strong>
+              <h3>Time dead</h3>
+              <p>На 511 секунд больше вне карты — главный системный риск.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="roster" class="section roster-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> THE FIVE</p>
+              <h2>Пять траекторий.<br />Пять личных брендов.</h2>
+            </div>
+            <p class="section-intro">
+              Выберите игрока, чтобы увидеть его текущий сигнал. Ниже — отдельный world-class case
+              для каждого участника состава.
+            </p>
+          </div>
+
+          <div id="player-tabs" class="player-tabs reveal" role="tablist" aria-label="Игроки команды"></div>
+
+          <article id="player-profile" class="player-profile reveal" aria-live="polite">
+            <div class="profile-identity">
+              <p class="profile-index">PLAYER 01</p>
+              <div class="hero-monogram" aria-hidden="true">RA</div>
+              <div>
+                <p class="profile-role">MACRO / OFFLANE</p>
+                <h3 class="profile-name">Сергей</h3>
+                <p class="profile-hero">Ragnaros</p>
+              </div>
+              <span class="tier-badge">TIER B</span>
+            </div>
+            <div class="profile-data">
+              <div class="profile-stats"></div>
+              <div class="profile-bars"></div>
+            </div>
+            <div class="profile-verdict">
+              <p class="panel-kicker">SCOUT VERDICT</p>
+              <blockquote></blockquote>
+              <div class="verdict-tags"></div>
+            </div>
+          </article>
+          <a class="dossier-jump reveal" href="#individuals">
+            <span>Открыть полные досье всех пяти игроков</span><b aria-hidden="true">↓</b>
+          </a>
+        </div>
+      </section>
+
+      <section id="individuals" class="section individuals-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> INDIVIDUAL DOSSIERS / WORLD-CLASS UPSIDE</p>
+              <h2>Не массовка.<br />Пять потенциальных звёзд.</h2>
+            </div>
+            <p class="section-intro">
+              Скаутинг мирового уровня ищет не идеальную статистику, а редкое преимущество,
+              которое можно превратить в доминирующую игровую идентичность.
+            </p>
+          </div>
+
+          <div class="world-profiles">
+            <article class="world-profile reveal" id="sergey-dossier">
+              <div class="world-profile-number">01</div>
+              <div class="world-profile-main">
+                <p class="world-archetype">THE MAP ARCHITECT</p>
+                <h3>Сергей <span>/ Ragnaros</span></h3>
+                <p class="world-thesis">
+                  Потенциально один из лучших макро-игроков мира: создаёт настолько большой объём
+                  ресурсов, что может выигрывать карту ещё до начала решающего teamfight.
+                </p>
+                <div class="world-proof" aria-label="Ключевые показатели Сергея">
+                  <div><strong>324.6K</strong><span>SIEGE · #1 TEAM</span></div>
+                  <div><strong>35.0K</strong><span>XP · #1 TEAM</span></div>
+                  <div><strong>291</strong><span>MINION KILLS</span></div>
+                </div>
+              </div>
+              <aside class="world-case">
+                <p class="panel-kicker">WHY HE CAN BE WORLD-CLASS</p>
+                <h4>Он видит карту как экономику.</h4>
+                <p>
+                  58% участия в убийствах не мешают ему лидировать по XP и наносить больше половины
+                  командного siege. Такая автономность — редкий фундамент для элитного offlaner.
+                </p>
+                <div class="world-unlock"><span>UNLOCK</span><b>Снизить outnumbered deaths — и объём превратится в контроль темпа.</b></div>
+              </aside>
+            </article>
+
+            <article class="world-profile reveal" id="david-dossier">
+              <div class="world-profile-number">02</div>
+              <div class="world-profile-main">
+                <p class="world-archetype">THE CONTROL ENGINE</p>
+                <h3>DavidKimChi <span>/ Arthas</span></h3>
+                <p class="world-thesis">
+                  Потенциально танк мирового класса, вокруг которого четыре игрока становятся лучше:
+                  соединяет инициацию, контроль и участие почти в каждом командном успехе.
+                </p>
+                <div class="world-proof" aria-label="Ключевые показатели DavidKimChi">
+                  <div><strong>81%</strong><span>KILL PARTICIPATION</span></div>
+                  <div><strong>21</strong><span>TAKEDOWNS · #1</span></div>
+                  <div><strong>777</strong><span>CONTROL SCORE</span></div>
+                </div>
+              </div>
+              <aside class="world-case">
+                <p class="panel-kicker">WHY HE CAN BE WORLD-CLASS</p>
+                <h4>Он делает контакт неизбежным.</h4>
+                <p>
+                  Лучший KP команды и лидерство по root/control показывают игрока, который уже влияет
+                  не только уроном, но и архитектурой боя — основой элитного tank shotcalling.
+                </p>
+                <div class="world-unlock"><span>UNLOCK</span><b>Развить primary calling и проверить эффективность на метовых танках.</b></div>
+              </aside>
+            </article>
+
+            <article class="world-profile reveal" id="saybb-dossier">
+              <div class="world-profile-number">03</div>
+              <div class="world-profile-main">
+                <p class="world-archetype">THE MECHANICAL CEILING</p>
+                <h3>saybb <span>/ Genji</span></h3>
+                <p class="world-thesis">
+                  Потенциальный глобальный highlight-player: механический потолок уже виден в цифрах —
+                  больше hero и teamfight damage, чем у любого партнёра.
+                </p>
+                <div class="world-proof" aria-label="Ключевые показатели saybb">
+                  <div><strong>81.9K</strong><span>HERO DMG · #1</span></div>
+                  <div><strong>62.9K</strong><span>TEAMFIGHT · #1</span></div>
+                  <div><strong>6</strong><span>SOLO KILLS</span></div>
+                </div>
+              </div>
+              <aside class="world-case">
+                <p class="panel-kicker">WHY HE CAN BE WORLD-CLASS</p>
+                <h4>Он способен решить бой сам.</h4>
+                <p>
+                  Высочайшая плотность урона на мобильном финишере — основа звёздного carry-бренда.
+                  Его потолок заметен даже в проигранном матче, где команда не конвертировала давление.
+                </p>
+                <div class="world-unlock"><span>UNLOCK</span><b>Сократить 414 секунд вне карты — сохранить агрессию без потери availability.</b></div>
+              </aside>
+            </article>
+
+            <article class="world-profile reveal" id="linatan-dossier">
+              <div class="world-profile-number">04</div>
+              <div class="world-profile-main">
+                <p class="world-archetype">THE FRANCHISE SUPPORT</p>
+                <h3>Linatan <span>/ Ana</span></h3>
+                <p class="world-thesis">
+                  Потенциально один из лучших backline-support игроков: сочетает высокий объём лечения,
+                  участие в убийствах и лучшую выживаемость команды.
+                </p>
+                <div class="world-proof" aria-label="Ключевые показатели Linatan">
+                  <div><strong>75.4K</strong><span>HEALING · #1</span></div>
+                  <div><strong>77%</strong><span>KILL PARTICIPATION</span></div>
+                  <div><strong>5</strong><span>DEATHS · LOWEST</span></div>
+                </div>
+              </div>
+              <aside class="world-case">
+                <p class="panel-kicker">WHY HE CAN BE WORLD-CLASS</p>
+                <h4>Он сохраняет чужую агрессию.</h4>
+                <p>
+                  Элитный support не просто лечит — он расширяет окно, в котором carry может рисковать.
+                  +21% healing advantage и минимум смертей делают Linatan самым чистым сигналом выборки.
+                </p>
+                <div class="world-unlock"><span>UNLOCK</span><b>Подтвердить точность skillshots и спокойствие comms против coordinated dive.</b></div>
+              </aside>
+            </article>
+
+            <article class="world-profile reveal" id="comrade-dossier">
+              <div class="world-profile-number">05</div>
+              <div class="world-profile-main">
+                <p class="world-archetype">THE RESOURCE HUNTER</p>
+                <h3>Comrade <span>/ Malthael</span></h3>
+                <p class="world-thesis">
+                  Потенциально лучший tempo-specialist своей ниши: чувствует нейтральные ресурсы карты
+                  и способен построить редкую идентичность на PvE-эффективности.
+                </p>
+                <div class="world-proof" aria-label="Ключевые показатели Comrade">
+                  <div><strong>4</strong><span>CAMPS · #1 TEAM</span></div>
+                  <div><strong>74.4K</strong><span>SIEGE DAMAGE</span></div>
+                  <div><strong>13.2K</strong><span>XP CONTRIBUTION</span></div>
+                </div>
+              </div>
+              <aside class="world-case">
+                <p class="panel-kicker">WHY HE CAN BE WORLD-CLASS</p>
+                <h4>Он находит ценность вне экрана.</h4>
+                <p>
+                  Четыре лагеря — лучший результат состава. Если синхронизировать это чувство ресурсов
+                  с командным контактом, Comrade может стать редким bruiser, меняющим темп карты.
+                </p>
+                <div class="world-unlock"><span>UNLOCK</span><b>Поднять 46% KP и доказать, что PvE-тайминг усиливает, а не изолирует команду.</b></div>
+              </aside>
+            </article>
+          </div>
+
+          <p class="dossier-disclaimer reveal">
+            World-class upside — скаутинговая гипотеза о потолке игрока. Она опирается на наблюдаемые
+            сигналы этого replay и должна быть подтверждена расширенным trial из 6–10 матчей.
+          </p>
+        </div>
+      </section>
+
+      <section class="section timeline-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> DECISION TIMELINE</p>
+              <h2>Матч сломался<br />не в один момент.</h2>
+            </div>
+            <p class="section-intro">
+              Восемь кластеров командных смертей показывают повторяемый паттерн. Нажмите на эпизод,
+              чтобы увидеть состав потери.
+            </p>
+          </div>
+
+          <article class="panel timeline-panel reveal">
+            <div class="timeline-scale" aria-hidden="true">
+              <span>00:00</span><span>05:00</span><span>10:00</span><span>15:00</span><span>20:00</span><span>25:45</span>
+            </div>
+            <div id="death-timeline" class="death-timeline" aria-label="Кластеры смертей по времени матча"></div>
+            <div id="cluster-detail" class="cluster-detail" aria-live="polite"></div>
+          </article>
+
+          <div class="timeline-conclusion reveal">
+            <span class="conclusion-mark">!</span>
+            <div>
+              <p class="panel-kicker">COACHING HYPOTHESIS</p>
+              <h3>Проблема — не производство урона, а дисциплина после контакта.</h3>
+            </div>
+            <p>
+              При равном hero damage команда отдала на 9 смертей больше. Первые две недели trial должны
+              измерять reset calls, stagger deaths и objective setup — до механических замен.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section roadmap-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> 90-DAY THESIS</p>
+              <h2>Не контракт вслепую.<br />Управляемая опциональность.</h2>
+            </div>
+            <p class="section-intro">
+              Инвестиционное решение разбито на три контрольные точки с понятными критериями выхода.
+            </p>
+          </div>
+
+          <div class="roadmap">
+            <article class="roadmap-step reveal">
+              <div class="step-time"><span>01</span><b>Дни 1–14</b></div>
+              <div class="step-body">
+                <p class="panel-kicker">VALIDATE</p>
+                <h3>Проверить сигнал</h3>
+                <p>6–10 матчей в драфтовых режимах, comms review, hero-pool audit.</p>
+                <ul>
+                  <li>Стабильность участия в убийствах</li>
+                  <li>Ошибки позиции до objective</li>
+                  <li>Качество shotcalling</li>
+                </ul>
+              </div>
+            </article>
+            <article class="roadmap-step reveal" data-delay="80">
+              <div class="step-time"><span>02</span><b>Дни 15–45</b></div>
+              <div class="step-body">
+                <p class="panel-kicker">DE-RISK</p>
+                <h3>Снять системные риски</h3>
+                <p>Тренерский спринт по конверсии, reset calls и контролю объектов.</p>
+                <ul>
+                  <li>Снизить кластерные смерти</li>
+                  <li>Поднять structure conversion</li>
+                  <li>Развести роли в late game</li>
+                </ul>
+              </div>
+            </article>
+            <article class="roadmap-step reveal" data-delay="160">
+              <div class="step-time"><span>03</span><b>Дни 46–90</b></div>
+              <div class="step-body">
+                <p class="panel-kicker">DECIDE</p>
+                <h3>Зафиксировать ядро</h3>
+                <p>Scrim block против сопоставимых составов и финальный roster decision.</p>
+                <ul>
+                  <li>Подписать подтверждённое ядро</li>
+                  <li>Точечно усилить слабую роль</li>
+                  <li>Утвердить KPI сезона</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section data-room-section">
+        <div class="shell">
+          <div class="data-room reveal">
+            <div class="data-room-copy">
+              <p class="eyebrow"><span></span> DATA ROOM / READY</p>
+              <h2>Решение начинается<br />с проверяемых данных.</h2>
+              <p>
+                Полный 14-страничный scouting report: игроки, таланты, таймлайн смертей,
+                сравнительные графики, риски и рекомендации по tryout.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="assets/pirtus-vrot-scouting-report.pdf" target="_blank" rel="noreferrer">
+                  Открыть полный отчёт <span aria-hidden="true">↗</span>
+                </a>
+                <button class="button button-ghost" type="button" data-open-methodology>
+                  Методология
+                </button>
+              </div>
+            </div>
+            <div class="report-preview" aria-hidden="true">
+              <div class="report-sheet report-back"></div>
+              <div class="report-sheet report-front">
+                <span>CONFIDENTIAL / SCOUTING 01</span>
+                <div class="report-glyph"><i></i><i></i><i></i></div>
+                <h3>PIRTUS<br /><span>.VROT</span></h3>
+                <p>TEAM SCOUTING<br />&amp; INVESTMENT BRIEF</p>
+                <b>14 PAGES · 10,476 EVENTS</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>PIRTUS<b>.VROT</b></span>
+        </a>
+        <p>PIRTUS.VROT · Private scouting preview · 2026</p>
+        <p>Один матч — сигнал, не гарантия. Решение только после structured tryout.</p>
+      </div>
+    </footer>
+
+    <dialog id="methodology-dialog" class="methodology-dialog">
+      <form method="dialog">
+        <button class="dialog-close" value="close" aria-label="Закрыть">×</button>
+        <p class="eyebrow"><span></span> METHODOLOGY</p>
+        <h2>Что стоит за цифрами</h2>
+        <p>
+          Источник — StormReplay матча от 11 октября 2025 года. Декодировано 10 476 tracker events:
+          статистика игроков, таланты, смерти, командные показатели и объекты карты.
+        </p>
+        <p>
+          Tier и индексы — скаутинговая интерпретация этой выборки, а не официальный рейтинг.
+          Мы отделяем наблюдаемый факт от гипотезы и рекомендуем 6–10 дополнительных матчей
+          перед кадровым или инвестиционным решением.
+        </p>
+        <div class="method-grid">
+          <div><span>REPLAY</span><b>1 матч</b></div>
+          <div><span>EVENTS</span><b>10 476</b></div>
+          <div><span>BUILD</span><b>95301</b></div>
+          <div><span>CONFIDENCE</span><b>Directional</b></div>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
