@@ -1582,17 +1582,6 @@ a:focus-visible {
 
 .reveal.in-view { opacity: 1; transform: none; }
 
-.world-profile.reveal {
-  clip-path: inset(0 0 100% 0);
-  transform: translateY(52px) scale(0.985);
-  transition: opacity 650ms ease, transform 900ms cubic-bezier(.17,.8,.24,1), clip-path 950ms cubic-bezier(.2,.75,.2,1);
-}
-
-.world-profile.reveal.in-view {
-  clip-path: inset(0);
-  transform: none;
-}
-
 .motion-ready .world-profile-main,
 .motion-ready .world-case {
   transform: translate3d(var(--profile-x, 0), var(--profile-y, 0), 0);
@@ -1729,5 +1718,4 @@ a:focus-visible {
   .hero-energy,
   .hero-flare { display: none !important; }
   body.intro-active { overflow: auto; }
-  .world-profile.reveal { opacity: 1; clip-path: none; transform: none; }
 }
