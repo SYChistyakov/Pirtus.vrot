@@ -324,14 +324,28 @@ function initEpicMotion() {
   const progress = document.querySelector(".scroll-progress i");
   const heroVisual = document.querySelector(".hero-visual");
   const root = document.documentElement;
+  const navigation = performance.getEntriesByType("navigation")[0];
+  const isReload = navigation?.type === "reload";
+  let introSeen = false;
 
-  if (!reduced) {
+  try {
+    introSeen = sessionStorage.getItem("pirtus-intro-seen") === "1";
+    sessionStorage.setItem("pirtus-intro-seen", "1");
+  } catch {
+    introSeen = isReload;
+  }
+
+  if (!reduced && !isReload && !introSeen) {
     document.body.classList.add("intro-active");
     root.classList.add("motion-ready");
     window.setTimeout(() => {
       document.body.classList.add("intro-complete");
       document.body.classList.remove("intro-active");
     }, 2250);
+  } else {
+    document.body.classList.add("intro-complete");
+    document.body.classList.remove("intro-active");
+    if (!reduced) root.classList.add("motion-ready");
   }
 
   const updateProgress = () => {
